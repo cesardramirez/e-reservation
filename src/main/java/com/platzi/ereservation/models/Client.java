@@ -41,7 +41,7 @@ public class Client {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid2")
-    private String id;
+    private String idCli;
     private String name;
     private String lastName;
     private String address;

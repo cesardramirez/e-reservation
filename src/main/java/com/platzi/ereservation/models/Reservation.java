@@ -20,12 +20,12 @@ public class Reservation {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid2")
-    private String id;
+    private String idRes;
     private Date admissionDate;
     private Date departureDate;
     private int amountPeople;
     private String description;
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "idCli")
     private Client client;  // Nombre correspondiente a mappedBy de la clase Client.
 }
