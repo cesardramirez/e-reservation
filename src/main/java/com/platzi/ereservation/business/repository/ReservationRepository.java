@@ -16,6 +16,6 @@ import java.util.List;
  */
 public interface ReservationRepository extends JpaRepository<Reservation, String> {
 
-    @Query("SELECT r FROM Reservation r WHERE r.admissionDate = :startDate AND r.departureDate = :endDate")
+    @Query(value = "SELECT r FROM Reservation r WHERE r.admissionDate = :startDate AND r.departureDate = :endDate", nativeQuery = true)
     List<Reservation> find(@Param("startDate") Date startDate, @Param("endDate") Date endDate);
 }
