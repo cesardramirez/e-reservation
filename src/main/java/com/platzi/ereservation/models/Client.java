@@ -31,10 +31,15 @@ import java.util.Set;
  * Las relaciones en JPA se deben mapear birideccionalmente, a diferencia en BD que en las tablas se hacen en un solo lado.
  *
  ** Un cliente puede tener muchas reservaciones.
+ *
+ * @NamedQueries permite definir las consultas a nivel de clase evitando las repeticiones cuando varios desarrolladores hagan uso de las mismas consultas.
+ *   ?1 : Primer parámetro que se envíe.
+ *   El nombre del NamedQuery debe ser el mismo que se utilice en el Repository al crear el método.
  */
 @Data
 @Entity
 @Table(name = "client")
+@NamedQuery(name="Client.findByIdentification", query="SELECT c FROM Client c WHERE c.identification = ?1")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Client {
@@ -44,6 +49,7 @@ public class Client {
     private String idCli;
     private String name;
     private String lastName;
+    private String identification;
     private String address;
     private String phone;
     private String email;

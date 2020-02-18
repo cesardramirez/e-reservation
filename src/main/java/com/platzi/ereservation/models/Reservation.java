@@ -10,6 +10,7 @@ import java.util.Date;
 
 /**
  * Class representing the Reservation table.
+ * @Temporal(TemporalType.DATE) : Acotara el campo solo a la Fecha, descartando la hora
  */
 @Data
 @Entity
@@ -21,7 +22,9 @@ public class Reservation {
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid2")
     private String idRes;
+    @Temporal(TemporalType.DATE)
     private Date admissionDate;
+    @Temporal(TemporalType.DATE)
     private Date departureDate;
     private int amountPeople;
     private String description;
