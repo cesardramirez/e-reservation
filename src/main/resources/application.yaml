@@ -7,5 +7,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop  # create-drop se utiliza la primera vez para crear la estructura de la bd, después se utiliza update
-      generate-ddl: true  # Imprime la instrucción SQL relacionada al método, ya sea save() o update().
+    generate-ddl: true  # Imprime la instrucción SQL relacionada al método, ya sea save() o update().
     show-sql: true

@@ -26,7 +26,7 @@ import java.util.Set;
  * Si un campo no tiene una anotación, el nombre por defecto será el mismo del campo.
  * @GenericGenerator: Anotación de Hibernate. Hace un match con el name y con el generator de la anotación anterior.
  *
- * Si la relación de 1 se define el atributo como un objeto.
+ * Si la relación es de a uno se define el atributo como un objeto.
  * Si la relación es de muchos se define el atributo como una colección.
  * Las relaciones en JPA se deben mapear birideccionalmente, a diferencia en BD que en las tablas se hacen en un solo lado.
  *
