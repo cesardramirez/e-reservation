@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  * Class representing the Reservation table.
- * @Temporal(TemporalType.DATE) : Acotara el campo solo a la Fecha, descartando la hora
+ * @Temporal(TemporalType.DATE) : Acotara el campo solo a la Fecha, descartando la hora.
  */
 @Data
 @Entity

@@ -15,5 +15,6 @@ public interface ClientRepository extends JpaRepository<Client, String> {
 
     List<Client> findByLastName(String lastName);
 
+    // @NamedQuery in Client class
     Client findByIdentification(String identification);
 }
