@@ -8,6 +8,8 @@ Platzi - Curso de Hibernate y Java Spring - App Spring Boot
 <br>`docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=platzi postgres:9.6.6-alpine`
 3. Iniciar el contenedor ya existente (si está abajo).
 <br>`docker start postgres`
+- Ver el estado de los contenedores actuales.
+<br>`docker ps -a`
 - Eliminar un contenedor de manera forzada.
 <br>`docker rm -f postgres`
 
