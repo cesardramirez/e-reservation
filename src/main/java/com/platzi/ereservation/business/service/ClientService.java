@@ -5,6 +5,8 @@ import com.platzi.ereservation.models.Client;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Class that define services (operations) of the Client class.
  *
@@ -66,5 +68,14 @@ public class ClientService {
     @Transactional(readOnly = true)
     public Client findByIdentification(String identification) {
         return clientRepository.findByIdentification(identification);
+    }
+
+    /**
+     * Service that returns all clients.
+     * @return
+     */
+    @Transactional
+    public List<Client> findAll() {
+        return clientRepository.findAll();
     }
 }

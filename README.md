@@ -14,6 +14,6 @@ Platzi - Curso de Hibernate y Java Spring - App Spring Boot
 <br>`docker rm -f postgres`
 
 ## Proyecto Spring Boot.
-- Se debe instalar el Plugin de [Lombok](http://www.advlatam.com/en/lombok-a-library-to-code-more-cleanly/) en IntelliJ IDEA para que tome las anotaciones AllArgsConstructor, Data, entre otros.
+- Se debe instalar el Plugin de [Lombok](http://www.advlatam.com/en/lombok-a-library-to-code-more-cleanly/) en IntelliJ IDEA para que tome las anotaciones AllArgsConstructor, Data, que tome los getters y setters, entre otros.
 - El contenedor docker debe estar arriba antes de iniciar el proyecto de Spring Boot.
     > El lo que hará es que a través del archivo [**application.yaml**](https://github.com/cesardramirez/e-reservation/blob/master/src/main/resources/application.yaml#L9) es crear la base de datos por medio de Hibernate por primera vez a través de los modelos.
