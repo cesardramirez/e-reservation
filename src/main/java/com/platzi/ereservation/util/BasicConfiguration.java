@@ -25,5 +25,7 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
             .formLogin()
             .and()
             .httpBasic();
+
+        httpSecurity.csrf().disable();  // Habilitar ejecuciones en el Swagger para almacenamiento en la BD.
     }
 }
