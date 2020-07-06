@@ -17,3 +17,14 @@ Platzi - Curso de Hibernate y Java Spring - App Spring Boot
 - Se debe instalar el Plugin de [Lombok](http://www.advlatam.com/en/lombok-a-library-to-code-more-cleanly/) en IntelliJ IDEA para que tome las anotaciones AllArgsConstructor, Data, que tome los getters y setters, entre otros.
 - El contenedor docker debe estar arriba antes de iniciar el proyecto de Spring Boot.
     > El lo que hará es que a través del archivo [**application.yaml**](https://github.com/cesardramirez/e-reservation/blob/master/src/main/resources/application.yaml#L9) es crear la base de datos por medio de Hibernate por primera vez a través de los modelos.
+
+## Swagger y Login.
+- Se añade un modo de autenticación y permisos para ingresar al swagger.
+- Se ingresa al [login](http://localhost:8080/app/login) con el usuario __cesar__ y la clave __platzi__.
+<br>![](/docs/img_01.png)
+- Si las credenciales no son las correctas, se le visualizará al usuario.
+<br>![](/docs/img_02.png)
+- Si su autenticación es exitosa, ingresará a la pantalla de [home](http://localhost:8080/app/home).
+<br>![](/docs/img_03.png)
+- Se visualizará correctamente la página construida para Swagger.
+<br>![](/docs/img_04.png)
