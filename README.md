@@ -12,6 +12,8 @@ Platzi - Curso de Hibernate y Java Spring - App Spring Boot
 <br>`docker ps -a`
 - Eliminar un contenedor de manera forzada.
 <br>`docker rm -f postgres`
+- Construir imagen en docker por medio del pom.xml.
+<br>`mvn clean install docker:build`
 
 ## Proyecto Spring Boot.
 - Se debe instalar el Plugin de [Lombok](http://www.advlatam.com/en/lombok-a-library-to-code-more-cleanly/) en IntelliJ IDEA para que tome las anotaciones AllArgsConstructor, Data, que tome los getters y setters, entre otros.
