@@ -12,8 +12,18 @@ Platzi - Curso de Hibernate y Java Spring - App Spring Boot
 <br>`docker ps -a`
 - Eliminar un contenedor de manera forzada.
 <br>`docker rm -f postgres`
-- Construir imagen en docker por medio del pom.xml.
+4. Construir imagen en docker por medio del pom.xml.
 <br>`mvn clean install docker:build`
+5. Subir la imagen a Docker Hub.
+<br>`docker login` y `docker push [nombre_imagen]`
+6. Crear un contenedor a través de nuestra imagen generada (ip del equipo).
+<br>`docker run -d --name ereservation --add-host=postgres_server:192.168.206.128 -p 8080:8080 revol89/e-reservation:latest`
+- Visualizar los logs del contenedor creado.
+<br>`docker logs -f ereservation`
+- Detener y reiniciar el contenedor.
+<br>`docker stop ereservation` y `docker restart ereservation`
+- Eliminar una imagen de Docker.
+<br>`docker rmi revol89/e-reservation`
 
 ## Proyecto Spring Boot.
 - Se debe instalar el Plugin de [Lombok](http://www.advlatam.com/en/lombok-a-library-to-code-more-cleanly/) en IntelliJ IDEA para que tome las anotaciones AllArgsConstructor, Data, que tome los getters y setters, entre otros.
