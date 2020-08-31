@@ -15,10 +15,10 @@ Platzi - Curso de Hibernate y Java Spring - App Spring Boot
 4. Construir imagen en docker por medio del pom.xml.
 <br>`mvn clean install docker:build`
 5. Subir la imagen a Docker Hub.
-<br>`docker login` y `docker push [nombre_imagen]`
-6. Crear un contenedor a través de nuestra imagen generada (ip del equipo).
+<br>`docker login` y `docker push revol89/e-reservation`
+6. Crear un contenedor a través de nuestra imagen generada (postgres_server será la ip del equipo local).
 <br>`docker run -d --name ereservation --add-host=postgres_server:192.168.206.128 -p 8080:8080 revol89/e-reservation:latest`
-- Visualizar los logs del contenedor creado.
+- Visualizar el log del contenedor creado.
 <br>`docker logs -f ereservation`
 - Detener y reiniciar el contenedor.
 <br>`docker stop ereservation` y `docker restart ereservation`
